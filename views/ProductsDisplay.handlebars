@@ -1,0 +1,19 @@
+<h1 style= "color: rgb(142, 15, 247) ">Productos Disponibles</h1>
+{{#if hayProductos}}
+<table class="table table-dark table-striped">
+    <tr>
+        <th>Producto</th>
+        <th>Precio</th>
+        <th>Imagen</th>
+    </tr>
+    {{#each AllProd}}
+    <tr>
+        <td>{{this.TITLE}}</td>
+        <td>{{this.PRICE}}</td>
+        <td><img src={{this.THUMBNAIL}} alt="" border=3 height=40 width=40></td>
+    </tr>
+    {{/each}}
+</table>
+{{else}}
+<p class="alert alert-warning">No hay productos cargados...</p>
+{{/if}}

@@ -1,0 +1,32 @@
+<div class="p-4 mt-1 mb-3 bg-light rounded-3" >
+    <h1 style= "color: rgb(142, 15, 247) " >Ingrese un producto</h1>
+    <div class="p-4 mt-1 mb-3 bg-dark rounded-3">
+        <form>
+            <div class="form-group">
+            <label for="TITLE">Producto</label>
+            <input type="text" id="TITLE" class="form-control" name="TITLE" placeholder="Nombre del Producto" pattern=[A-Z a-z 0-9]{3,20} required>
+            </div>
+            <div class="form-group">
+                <label for="PRICE">Precio</label>
+                <input type="number" id="PRICE" class="form-control" name="PRICE" placeholder="Precio del Producto"  required>
+            </div>
+            <div class="form-group">
+            <label for="THUMBNAIL">Imagen</label>
+            <input type="url" id="THUMBNAIL" class="form-control" name="THUMBNAIL" placeholder="URL a imagen descriptiva"  required>
+            </div>
+        </form>
+        <input type="button" class="btn btn-info mt-3 mb-5" value="Guardar" id="btn_newProd">
+        <div id="Status"></div>
+    </div>
+    <div id="Productos"></div>
+</div>
+<div class="p-4 mt-1 mb-3 bg-light rounded-3">
+<h1 style= "color: rgb(15, 181, 247) ">Centro de Mensajes</h1>
+    <label for="inputAutor">Autor:</label>
+    <input id="inputAutor" type="email" class="form-control" placeholder="Ingrese su Email"><br>
+    <div id="Mensajes"></div>
+    <label for="inputTexto">Mensaje:</label>
+    <input id="inputTexto" type="text" class="form-control" placeholder="Cuentanos Algo"><br>
+    <button id="btn_enviar" class="btn btn-primary mt-3 mb-5">Enviar</button>
+    <div id="Msj_info" style="color: orange;"></div>
+</div>

@@ -1,0 +1,16 @@
+{{#ifCond Respuesta "Producto Añadido Exitosamente"}}
+    <p style="font-size: 20px; color: rgb(0, 255, 21);">Producto añadido exitosamente</p>
+    {{else}}
+    {{#ifCond Respuesta "El Formato no es Correcto"}}
+        <p style="font-size: 20px; color: rgb(255, 94, 0);">El Formato no es Correcto</p>
+        {{else}}
+            {{#ifCond Respuesta "Producto Duplicado" }}
+                <p style="font-size: 20px; color: rgb(251, 255, 0);">Produto Duplicado</p>
+                {{else}}
+                    {{#ifCond Respuesta "Error desconocido"}}
+                        <p style="font-size: 20px; color: rgb(255, 0, 0);">Error desconocido</p>
+                    {{/ifCond}}
+            {{/ifCond}}
+    {{/ifCond}}
+{{/ifCond}}
+
